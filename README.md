@@ -75,7 +75,7 @@ Also, you will need the .caffemodel file and the .binaryproto file.
   ![resize](imgs/resize.jpeg)
   
 - Reading the image:
-  Our input image is of the **jpe** format, but tensorRT itself doesn't provide methods for reading images. 
+  Our input image is of the **jpeg** format, but tensorRT itself doesn't provide methods for reading images. 
   
   So we used <a href="https://github.com/nothings/stb/blob/master/stb_image.h">stb_image</a> to read the images.
   
