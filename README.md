@@ -17,6 +17,7 @@ You are suggested to flash the TX2 device with Jetpack 3.1, so you can have all 
 ## Caffe model we use
 
 We try to classify three different types of parking slots:
+
 ![ParkingSlotType1](imgs/ParkingSlotType1.bmp)
 ![ParkingSlotType2](imgs/ParkingSlotType2.bmp)
 ![ParkingSlotType3](imgs/ParkingSlotType3.bmp)
@@ -67,7 +68,9 @@ Also, you will need the .caffemodel file and the .binaryproto file.
 - Resizing the image:
   In our case, the image is usually of size 48*210, while the input of Caffe model is 227*227, so images will need to be resized. I did it before running tensorRT.
   Resizing is done by simply scaling instead of padding. Here is a resized image:
+  
   ![resize](imgs/resize.jpeg)
+  
 - Reading the image:
   Our input image is of the jpeg format, but tensorRT itself doesn't provide methods for reading images. 
   So we used stb_image to read the images.
