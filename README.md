@@ -1,8 +1,8 @@
-tensorRT-Caffe
+#tensorRT-Caffe
 
 A demo using tensorRT on NVIDIA Jetson TX2 accelerating the Caffe model of AlexNet.
 
-Prerequisites:
+##Prerequisites:
 
 - NVIDIA Jetson TX2
 - CUDA 8.0
@@ -16,7 +16,7 @@ You are suggested to flash the TX2 device with Jetpack 3.1, so you can have all 
 
 
 
-Caffe model we use
+##Caffe model we use
 
 We try to classify three different types of parking slots:
 
@@ -69,7 +69,7 @@ Also, you will need the .caffemodel file and the .binaryproto file.
 
 
 
-Emphasis on some issues
+##Emphasis on some issues
 
 - Resizing the image:
   In our case, the image is usually of size 48*210, while the input of Caffe model is 227*227, so images will need to be resized. I did it before running tensorRT.
