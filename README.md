@@ -2,7 +2,7 @@
 
 A demo using tensorRT on NVIDIA Jetson TX2 accelerating the Caffe model of AlexNet.
 
-Please refer to *NVIDIA JETSON TX2 tensorRT 加速 Caffe 实战.pdf* for detailed description in Chinese.
+Please refer to **NVIDIA JETSON TX2 tensorRT 加速 Caffe 实战.pdf** for detailed description in Chinese.
 
 ## Prerequisites:
 
